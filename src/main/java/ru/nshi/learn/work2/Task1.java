@@ -26,17 +26,17 @@ public void printArray(int[] array){
     }
 }
 public int maxArray(int[] array){
-    int max=150;
-    for(int i=0; i<10; i++){
-        if(array[i]>max){
+    int max=10;
+    for(int i=0; i<array.length; i++){
+        if(array[i]>=max){
            max=array[i];
         }
         }
     return max;
 }
 public int minArray(int[] array){
-    int min=0;
-    for(int i=0; i<10; i++){
+    int min=100;
+    for(int i=0; i<array.length; i++){
         if(array[i]<min){
            min=array[i];
         }
@@ -45,7 +45,7 @@ public int minArray(int[] array){
 }
 public int sumArrayAft0(int[] array){
     int sum=0;
-    for(int i=0; i<10; i++){
+    for(int i=0; i<array.length; i++){
         if(array[i]>0){
             sum+=array[i];
         }
@@ -53,9 +53,9 @@ public int sumArrayAft0(int[] array){
     return sum;
 }
 public void arfArray(int[] array){
-    int imax=0, imin=0, i;
-    float max=0, min=150, sum=0;
-    for(i=0; i<10; i++){
+    Task1 value=new Task1();
+    int imax=value.imaxArray(array), imin=value.iminArray(array), max=10, min=100, sum=0;
+    for(int i=0; i<array.length; i++){
         if(array[i]>max){
             max=array[i];
             imax=i;
@@ -66,14 +66,34 @@ public void arfArray(int[] array){
         }
         }
         if(imax>imin){
-        for(i=imin; i<=imax; i++){
-            sum+=array[i];}
-        System.out.print(sum/(imax-imin));
+            for(int i=imin+1; i<imax; i++){
+                sum+=array[i];}
+        System.out.print(sum/(imax-imin-1));
         }
         if(imin>imax){
-            for(i=imax; i<=imin; i++){
+            for(int i=imax+1; i<imin; i++){
                 sum+=array[i];}
-            System.out.print(sum/(imin-imax));
+            System.out.print(sum/(imin-imax-1));
         }
+}
+public int imaxArray(int[] array){
+        Task1 value= new Task1();
+        int max=value.maxArray(array);
+        for(int i=0; i<array.length; i++){
+            if(array[i]==max){
+                return i;
+            }
+        }
+        return 0;
+}
+public int iminArray(int[] array){
+    Task1 value= new Task1();
+    int min=value.minArray(array);
+    for(int i=0; i<array.length; i++){
+        if(array[i]==min){
+            return i;
+        }
+    }
+    return 0;
 }
 }

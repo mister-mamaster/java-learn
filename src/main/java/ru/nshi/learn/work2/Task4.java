@@ -6,9 +6,9 @@ public class Task4 {
     Task1 value=new Task1();
     int[] numbers=value.newArray(10);
     numbers=value.randomArray(numbers);
-    int max=value.maxArray(numbers), min=value.minArray(numbers);
-    numbers[max]+=numbers[min];
-    numbers[min]=numbers[max]-numbers[min];
-    numbers[max]-=numbers[min];
+    int imax=value.imaxArray(numbers), imin=value.iminArray(numbers);
+    numbers[imax]+=numbers[imin];
+    numbers[imin]=numbers[imax]-numbers[imin];
+    numbers[imax]-=numbers[imin];
     }
 }
