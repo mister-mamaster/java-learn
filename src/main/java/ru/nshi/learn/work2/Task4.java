@@ -1,25 +1,14 @@
 package ru.nshi.learn.work2;
 
-import java.util.Random;
 
 public class Task4 {
     public static void main(String[] Args){
-    Random rand=new Random();
-    int[] numbers= new int[10];
-    int max=0, min=150, imax=0, imin=0;
-    for(int i=0; i<10; i++){
-    numbers[i]=rand.nextInt(90)+10;
-    if(numbers[i]>max){
-        max=numbers[i];
-        imax=i;
-    }
-    if(numbers[i]<min){
-        min=numbers[i];
-        imin=i;
-    }
-    }
-    numbers[imax]+=numbers[imin];
-    numbers[imin]=numbers[imax]-numbers[imin];
-    numbers[imax]-=numbers[imin];
+    Task1 value=new Task1();
+    int[] numbers=value.newArray(10);
+    numbers=value.randomArray(numbers);
+    int max=value.maxArray(numbers), min=value.minArray(numbers);
+    numbers[max]+=numbers[min];
+    numbers[min]=numbers[max]-numbers[min];
+    numbers[max]-=numbers[min];
     }
 }
