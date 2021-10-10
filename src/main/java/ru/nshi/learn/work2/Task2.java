@@ -8,14 +8,29 @@ public class Task2 {
         Task2 value2=new Task2();
         int[] numbers=value.newArray(10);
         numbers=value2.randArray(numbers);
-        int sum=value.sumArrayAft0(numbers);
-        System.out.println(sum);
+        int sum=value2.sumArrayAft0(numbers);
+        System.out.print("Сумма равна: "+sum+"\nИсходный массив: ");
+        value.printArray(numbers);
     }
+
+
+
     public int[] randArray(int[] array){
         Random rand=new Random();
         for(int i=0; i<array.length; i++){
-            array[i]=rand.nextInt(102)-50;
+            array[i]=rand.nextInt(101)-50;
             }
         return array;
+    }
+
+
+    public int sumArrayAft0(int[] array){
+        int sum=0;
+        for(int i=0; i<array.length; i++){
+            if(array[i]>0){
+                sum+=array[i];
+            }
+            }
+        return sum;
     }
 }
