@@ -6,7 +6,7 @@ public class Task1 {
     public static void main(String[] Args){
     Task1 value=new Task1();
     int[][] matrix=new int[10][10];
-    matrix=value1.randMrx();
+    matrix=value.randMrx();
     System.out.println("Исходный массив:");
     value.printMatrix(matrix);
     int[] sum=value.sumLine(matrix);
