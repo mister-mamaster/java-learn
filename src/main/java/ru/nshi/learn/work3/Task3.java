@@ -5,39 +5,41 @@ public class Task3 {
     public static void main(String[] Args){
     Task1 value1=new Task1();
     Task3 value3=new Task3();
-    int[][] matrix=new int[10][10];
-    matrix=value1.randMrx();
+    int[][] matrix=value1.randMrx(10);
     System.out.println("Исходный массив:");
     value1.printMatrix(matrix);
-    value3.magic(matrix);
+    if(value3.magic(matrix)) System.out.println("Это магический квадрат");
+    else System.out.println("Это беспонтовая кучка чисел");
     }
-    public void magic(int[][] matrix){
-        int[] sum=new int[22];
+
+
+    public boolean magic(int[][] matrix){
+        int[] sum=new int[matrix.length*2+2];
         boolean flag=true;
-        for(int i1=0; i1<10; i1++){
-            for(int i2=0; i2<10; i2++){
-                sum[i1]+=matrix[i1][i2];
+        for(int line=0; line<matrix.length; line++){
+            for(int column=0; column<matrix.length; column++){
+                sum[line]+=matrix[line][column];
             }
         }
-        for(int i1=0; i1<10; i1++){
-            for(int i2=0; i2<10; i2++){
-                sum[10+i1]+=matrix[i2][i1];
+        for(int line=0; line<matrix.length; line++){
+            for(int column=0; column<matrix.length; column++){
+                sum[matrix.length-1+line]+=matrix[column][line];
             }
         }
-        for(int i=0; i<10; i++){
-            sum[20]+=matrix[i][i];
+        for(int index=0; index<matrix.length; index++){
+            sum[matrix.length*2]+=matrix[index][index];
         }
-        for(int i=0; i<10; i++){
-            sum[21]+=matrix[9-i][i];
+        for(int index=0; index<matrix.length; index++){
+            sum[matrix.length*2+1]+=matrix[matrix.length-1-index][index];
         }
-        for(int i=1; i<22; i++){
-            if(sum[0]!=sum[i]){
+        for(int index=1; index<22; index++){
+            if(sum[0]!=sum[index]){
                 flag=false;
             }
         }
         if(flag){
-            System.out.println("Квадрат магический");
+            return true;
         }
-        else System.out.println("Квадрат беспонтовый");
+        return false;
     }
 }

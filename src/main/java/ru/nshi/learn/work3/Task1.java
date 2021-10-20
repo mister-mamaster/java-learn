@@ -5,43 +5,42 @@ import java.util.Random;
 public class Task1 {
     public static void main(String[] Args){
     Task1 value=new Task1();
-    int[][] matrix=new int[10][10];
-    matrix=value.randMrx();
+    int[][] matrix=value.randMrx(10);
     System.out.println("Исходный массив:");
     value.printMatrix(matrix);
     int[] sum=value.sumLine(matrix);
     System.out.println("Суммы строк:");
-    for(int i=0; i<10; i++){
+    for(int i=0; i<sum.length; i++){
         System.out.println(sum[i]);
     }
     }
 
 
-    public int[][] randMrx(){
+    public int[][] randMrx(int size){
         Random rand=new Random();
-        int[][] matrix=new int[10][10];
-        for(int i1=0; i1<10; i1++){
-            for(int i2=0; i2<10; i2++){
-                matrix[i1][i2]=rand.nextInt(100);
+        int[][] matrix=new int[size][size];
+        for(int line=0; line<size; line++){
+            for(int column=0; column<size; column++){
+                matrix[line][column]=rand.nextInt(100);
             }
         }
         return matrix;
     }
 
     public int[] sumLine(int[][] matrix){
-        int[] sum=new int[10];
-        for(int i1=0; i1<10; i1++){
-            for(int i2=0; i2<10; i2++){
-                sum[i1]+=matrix[i1][i2];
+        int[] sum=new int[matrix.length];
+        for(int line=0; line<matrix.length; line++){
+            for(int column=0; column<matrix.length; column++){
+                sum[line]+=matrix[line][column];
             }
         }
         return sum;
     }
 
     public void printMatrix(int[][] matrix){
-        for(int i1=0; i1<10; i1++){
-            for(int i2=0; i2<10; i2++){
-                System.out.printf("%4d", matrix[i1][i2]);
+        for(int line=0; line<matrix.length; line++){
+            for(int column=0; column<matrix.length; column++){
+                System.out.printf("%4d", matrix[line][column]);
             }
             System.out.println();
         }
