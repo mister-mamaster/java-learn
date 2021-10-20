@@ -14,17 +14,15 @@ public class Task3 {
 
 
     public boolean magic(int[][] matrix){
-        int[] sum=new int[matrix.length*2+2];
+        Task1 value1=new Task1();
+        Task2 value2=new Task2();
+        int[] sum=new int[matrix.length*2+2], sumL=value1.sumLine(matrix), sumC=value2.sumCln(matrix);
         boolean flag=true;
-        for(int line=0; line<matrix.length; line++){
-            for(int column=0; column<matrix.length; column++){
-                sum[line]+=matrix[line][column];
-            }
+        for(int index=0; index<matrix.length; index++){
+                sum[index]=sumL[index];
         }
-        for(int line=0; line<matrix.length; line++){
-            for(int column=0; column<matrix.length; column++){
-                sum[matrix.length-1+line]+=matrix[column][line];
-            }
+        for(int index=matrix.length; index<(matrix.length*2); index++){
+                sum[index]=sumC[index-matrix.length];
         }
         for(int index=0; index<matrix.length; index++){
             sum[matrix.length*2]+=matrix[index][index];
