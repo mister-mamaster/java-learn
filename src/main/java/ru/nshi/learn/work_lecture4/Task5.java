@@ -26,19 +26,20 @@ public class Task5 {
 
 
     public boolean checkSubarray(int[] array2, int[] array1){
-        int count=0;
-        for(int i=0; i < array1.length-array2.length+1; i++){
+        int count = 0;
+        for(int i = 0; i < array1.length-array2.length+1; i++){
             if(array1[i] == array2[0]){
                 count++;
-                for(int j=1; j < array2.length; j++){
+                for(int j = 1; j < array2.length; j++){
                     if(array2[j] == array1[i+j]){
                         count++;
                     }
                 }
+                if(count == array2.length){
+                    return true;
+                }
+                count = 0;
             }
-        }
-        if(count == array2.length){
-            return true;
         }
         return false;
     }

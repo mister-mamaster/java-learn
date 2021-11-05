@@ -21,8 +21,8 @@ public class Task7 {
 
     public int[] bigRandomArray(int[] array){
         Random rand=new Random();
-    for(int i=0; i<array.length; i++){
-        array[i]=rand.nextInt(10000);
+        for(int i=0; i<array.length; i++){
+            array[i]=rand.nextInt(10000);
         }
         return array;
     }
@@ -30,7 +30,7 @@ public class Task7 {
     public int[] countNumber(int[] array){
         int[] numbers = new int[4];
         for(int i: array){
-            if((array[i] >= 1) && (array[i] < 10)){
+            if((array[i] >= 0) && (array[i] < 10)){
                 numbers[0]++;
             }
             if((array[i] >= 10) && (array[i] < 100)){
