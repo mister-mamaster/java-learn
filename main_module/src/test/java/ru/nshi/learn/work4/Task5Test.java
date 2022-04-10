@@ -19,7 +19,7 @@ public class Task5Test {
         String data = "33 к0р0вь1";
         String result = task5.uniSym(data);
         String actual_result = " крвь1";
-        assertEquals(result, actual_result);
+        assertEquals(actual_result, result);
     }
 
     @Test
@@ -27,7 +27,7 @@ public class Task5Test {
         String data = "34 п0пуга9";
         String result = task5.uniSym(data);
         String actual_result = "34 0уга9";
-        assertEquals(result, actual_result);
+        assertEquals(actual_result, result);
     }
 
 }

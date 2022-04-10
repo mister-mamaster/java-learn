@@ -19,7 +19,7 @@ public class Task2Test {
         int[][] array = {{1,1,1,2},{2,6,3,2},{9,9,9,3},{5,4,7,7}};
         int[] sums = {17,20,20,14};
         int[] mSums = task2.sumCln(array);
-        assertArrayEquals(mSums, sums);
+        assertArrayEquals(sums, mSums);
     }
 
     @Test
@@ -27,7 +27,7 @@ public class Task2Test {
         int[][] array = {{5,3,1,2},{2,9,3,0},{9,0,5,3},{5,4,8,7}};
         int[] sums = {21,16,17,12};
         int[] mSums = task2.sumCln(array);
-        assertArrayEquals(mSums, sums);
+        assertArrayEquals(sums, mSums);
     }
 
 }

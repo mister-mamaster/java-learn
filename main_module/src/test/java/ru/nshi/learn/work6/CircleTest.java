@@ -9,23 +9,33 @@ public class CircleTest {
 
     @Test
     void circleTest(){
-        Circle circle = new Circle(4,5,6,4.7);
-        circle.setArea();
+        Circle circle = new Circle(4);
         double area = circle.getArea();
-        circle.info();
-        assertEquals(69.36260000000001, area);
+        circle.setColorHSB(1,2,3);
+        System.out.print(circle.info());
+        assertEquals(50.24, area);
     }
 
     @Test
     void circleExceptionTest(){
         assertThrows(IllegalArgumentException.class, () -> {
-            Circle circle = new Circle(4, -5, 6, 7);
+            Circle circle = new Circle(4);
+            circle.setColorRGB(100, -2, 200);
         });
         assertThrows(IllegalArgumentException.class, () -> {
-            Circle circle = new Circle(4, 5, 6, -7);
+            Circle circle = new Circle(4);
+            circle.setColorRGB(300, 100, 100);
         });
         assertThrows(IllegalArgumentException.class, () -> {
-            Circle circle = new Circle(500, 5, 6, 7);
+            Circle circle = new Circle(-500);
+        });
+        assertThrows(IllegalArgumentException.class, () -> {
+            Circle circle = new Circle(1);
+            circle.setColorHSB(-1, 10, 10);
+        });
+        assertThrows(IllegalArgumentException.class, () -> {
+            Circle circle = new Circle(1);
+            circle.setColorHSB(1, 101, 101);
         });
     }
 }

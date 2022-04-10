@@ -19,7 +19,7 @@ public class Task7Test {
         String data = "Четыре чёрненьких чернявеньких чертёнка чертили чёрными чернилами чертёж";
         String result = task7.uniSymWord(data);
         String actual_result = "чёрненьких";
-        assertEquals(result, actual_result);
+        assertEquals(actual_result, result);
     }
 
     @Test
@@ -27,7 +27,7 @@ public class Task7Test {
         String data = "kghgfgkefg mnfl;jzifue  gggefeeefhjhn";
         String result = task7.uniSymWord(data);
         String actual_result = "mnfl;jzifue";
-        assertEquals(result, actual_result);
+        assertEquals(actual_result, result);
     }
 
 }

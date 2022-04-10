@@ -10,27 +10,25 @@ public class RectangleTest {
     @Test
     void rectangleTest(){
         double[] sides1 = {2, 3, 2, 3};
-        Rectangle rectangle1 = new Rectangle(sides1 , 2 , 3, 4);
-        rectangle1.setArea();
+        Rectangle rectangle1 = new Rectangle(sides1);
         assertEquals(6, rectangle1.getArea());
-        rectangle1.info();
+        System.out.print(rectangle1.info());
 
         double[] sides2 = {2, 2, 2, 2};
-        Rectangle rectangle2 = new Rectangle(sides2 , 2 , 3, 4);
-        rectangle2.setArea();
+        Rectangle rectangle2 = new Rectangle(sides2);
         assertEquals(4, rectangle2.getArea());
-        rectangle2.info();
+        System.out.print(rectangle2.info());
     }
 
     @Test
     void rectangleExceptionTest(){
         double[] sides1 = {0, 2, 0, 2};
         assertThrows(IllegalArgumentException.class, () -> {
-            Rectangle rectangle = new Rectangle(sides1, 5, 6, 7);
+            Rectangle rectangle = new Rectangle(sides1);
         });
         double[] sides2 = {1, 2, 3, 4};
         assertThrows(IllegalArgumentException.class, () -> {
-            Rectangle rectangle = new Rectangle(sides2, 5, 6, 7);
+            Rectangle rectangle = new Rectangle(sides2);
         });
     }
 }

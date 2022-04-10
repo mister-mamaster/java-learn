@@ -20,7 +20,7 @@ public class Task4Test{
         String data = "33 к0р0вь1";
         int result = task4.sumOfTex(data);
         int actual_result = 7;
-        assertEquals(result, actual_result);
+        assertEquals(actual_result, result);
     }
 
     @Test
@@ -28,7 +28,7 @@ public class Task4Test{
         String data = "34 п0пуга9";
         int result = task4.sumOfTex(data);
         int actual_result = 16;
-        assertEquals(result, actual_result);
+        assertEquals(actual_result, result);
     }
 
 }

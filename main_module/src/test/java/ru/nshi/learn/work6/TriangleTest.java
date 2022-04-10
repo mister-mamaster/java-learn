@@ -10,21 +10,20 @@ public class TriangleTest {
     @Test
     void triangleTest(){
         double[] sides = {7,7,8};
-        Triangle triangle = new Triangle(sides, 4, 5, 6);
-        triangle.setArea();
+        Triangle triangle = new Triangle(sides);
         assertEquals(22.978250586152114, triangle.getArea());
-        triangle.info();
+        System.out.print(triangle.info());
     }
 
     @Test
     void triangleExceptionTest(){
         double[] sides1 = {3, 3, 100};
         assertThrows(IllegalArgumentException.class, () -> {
-            Triangle triangle = new Triangle(sides1, 5, 6, 7);
+            Triangle triangle = new Triangle(sides1);
         });
         double[] sides2 = {-7, -7, 8};
         assertThrows(IllegalArgumentException.class, () -> {
-            Triangle triangle = new Triangle(sides2, 5, 6, 7);
+            Triangle triangle = new Triangle(sides2);
         });
     }
 

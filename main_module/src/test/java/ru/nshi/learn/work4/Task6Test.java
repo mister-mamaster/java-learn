@@ -19,7 +19,7 @@ public class Task6Test {
         String[] data = {"jfnhy789'r4w+-/1ud0827432476c/dhsag6tc7p;aэьомвшхгу04ц", "fdgh6i7u", "8rshysh6rvfdgj4"};
         String result = task6.uniSymArr(data);
         String actual_result = "jfny9'rw+-1u3sgtp;эьомвшхгуц";
-        assertEquals(result, actual_result);
+        assertEquals(actual_result, result);
     }
 
     @Test
@@ -27,7 +27,7 @@ public class Task6Test {
         String[] data = {"f84h4d54v68786sdfew785y7d987", "hgjrsig+98wsa", "qwertyuiopkjhgfdsal"};
         String result = task6.uniSymArr(data);
         String actual_result = "qwertyuiopkjhgfdsal";
-        assertEquals(result, actual_result);
+        assertEquals(actual_result, result);
     }
 
 }

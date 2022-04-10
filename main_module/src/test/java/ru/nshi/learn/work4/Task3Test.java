@@ -20,7 +20,7 @@ public class Task3Test{
         String data = "33 к0р0вь1";
         int[] result = task3.numOfTex(data);
         int[] actual_result = {3,3,0,0,1};
-        assertArrayEquals(result, actual_result);
+        assertArrayEquals(actual_result, result);
     }
 
     @Test
@@ -28,7 +28,7 @@ public class Task3Test{
         String data = "34 п0пуга9";
         int[] result = task3.numOfTex(data);
         int[] actual_result = {3,4,0,9};
-        assertArrayEquals(result, actual_result);
+        assertArrayEquals(actual_result, result);
     }
 
 

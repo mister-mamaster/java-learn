@@ -10,21 +10,20 @@ public class SquareTest {
     @Test
     void squareTest(){
         double[] sides = {3, 3, 3, 3};
-        Square square = new Square(sides , 2 , 3, 4);
-        square.setArea();
+        Square square = new Square(sides);
         assertEquals(9, square.getArea());
-        square.info();
+        System.out.print(square.info());
     }
 
     @Test
     void squareExceptionTest(){
         double[] sides1 = {0, 0, 0, 0};
         assertThrows(IllegalArgumentException.class, () -> {
-            Square square = new Square(sides1, 5, 6, 7);
+            Square square = new Square(sides1);
         });
         double[] sides2 = {2, 3, 2, 3};
         assertThrows(IllegalArgumentException.class, () -> {
-            Square square = new Square(sides2, 5, 6, 7);
+            Square square = new Square(sides2);
         });
     }
     

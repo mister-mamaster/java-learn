@@ -4,14 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3841956d-0dd3-45a8-9326-5bf13476cbb0" name="Changes" comment="OOP-work">
+    <list default="true" id="3841956d-0dd3-45a8-9326-5bf13476cbb0" name="Changes" comment="OOP-work (Commit №2)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_module/src/main/java/ru/nshi/learn/work6/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/main_module/src/main/java/ru/nshi/learn/work6/Circle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_module/src/main/java/ru/nshi/learn/work6/Figure.java" beforeDir="false" afterPath="$PROJECT_DIR$/main_module/src/main/java/ru/nshi/learn/work6/Figure.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_module/src/main/java/ru/nshi/learn/work6/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/main_module/src/main/java/ru/nshi/learn/work6/Rectangle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_module/src/main/java/ru/nshi/learn/work6/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/main_module/src/main/java/ru/nshi/learn/work6/Square.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_module/src/main/java/ru/nshi/learn/work6/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/main_module/src/main/java/ru/nshi/learn/work6/Triangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_module/src/test/java/ru/nshi/learn/work6/SquereTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/main_module/src/test/java/ru/nshi/learn/work6/SquereTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_module/src/test/java/ru/nshi/learn/work6/CircleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/main_module/src/test/java/ru/nshi/learn/work6/CircleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_module/src/test/java/ru/nshi/learn/work6/RectangleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/main_module/src/test/java/ru/nshi/learn/work6/RectangleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_module/src/test/java/ru/nshi/learn/work6/SquareTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/main_module/src/test/java/ru/nshi/learn/work6/SquareTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_module/src/test/java/ru/nshi/learn/work6/TriangleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/main_module/src/test/java/ru/nshi/learn/work6/TriangleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_module/target/classes/ru/nshi/learn/work6/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/main_module/target/classes/ru/nshi/learn/work6/Circle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_module/target/classes/ru/nshi/learn/work6/Figure.class" beforeDir="false" afterPath="$PROJECT_DIR$/main_module/target/classes/ru/nshi/learn/work6/Figure.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_module/target/classes/ru/nshi/learn/work6/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/main_module/target/classes/ru/nshi/learn/work6/Rectangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_module/target/classes/ru/nshi/learn/work6/Square.class" beforeDir="false" afterPath="$PROJECT_DIR$/main_module/target/classes/ru/nshi/learn/work6/Square.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_module/target/classes/ru/nshi/learn/work6/Triangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/main_module/target/classes/ru/nshi/learn/work6/Triangle.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,8 +79,55 @@
       <recent name="learn" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RectangleTest.rectangleExceptionTest">
-    <configuration name="RectangleTest.rectangleExceptionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CircleTest.circleTest">
+    <configuration name="CircleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="main_module" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.nshi.learn.work6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.nshi.learn.work6" />
+      <option name="MAIN_CLASS_NAME" value="ru.nshi.learn.work6.CircleTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CircleTest.circleExceptionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="main_module" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.nshi.learn.work6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.nshi.learn.work6" />
+      <option name="MAIN_CLASS_NAME" value="ru.nshi.learn.work6.CircleTest" />
+      <option name="METHOD_NAME" value="circleExceptionTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CircleTest.circleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="main_module" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.nshi.learn.work6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.nshi.learn.work6" />
+      <option name="MAIN_CLASS_NAME" value="ru.nshi.learn.work6.CircleTest" />
+      <option name="METHOD_NAME" value="circleTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RectangleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="main_module" />
       <extension name="coverage">
         <pattern>
@@ -82,29 +137,12 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.nshi.learn.work6" />
       <option name="MAIN_CLASS_NAME" value="ru.nshi.learn.work6.RectangleTest" />
-      <option name="METHOD_NAME" value="rectangleExceptionTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RectangleTest.rectangleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="main_module" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.nshi.learn.work6.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.nshi.learn.work6" />
-      <option name="MAIN_CLASS_NAME" value="ru.nshi.learn.work6.RectangleTest" />
-      <option name="METHOD_NAME" value="rectangleTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SquareTest.squareTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SquareTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="main_module" />
       <extension name="coverage">
         <pattern>
@@ -114,51 +152,18 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.nshi.learn.work6" />
       <option name="MAIN_CLASS_NAME" value="ru.nshi.learn.work6.SquareTest" />
-      <option name="METHOD_NAME" value="squareTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TriangleTest.triangleExceptionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="main_module" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.nshi.learn.work6.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.nshi.learn.work6" />
-      <option name="MAIN_CLASS_NAME" value="ru.nshi.learn.work6.TriangleTest" />
-      <option name="METHOD_NAME" value="triangleExceptionTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TriangleTest.triangleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="main_module" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.nshi.learn.work6.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.nshi.learn.work6" />
-      <option name="MAIN_CLASS_NAME" value="ru.nshi.learn.work6.TriangleTest" />
-      <option name="METHOD_NAME" value="triangleTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RectangleTest.rectangleExceptionTest" />
-        <item itemvalue="JUnit.SquareTest.squareTest" />
-        <item itemvalue="JUnit.RectangleTest.rectangleTest" />
-        <item itemvalue="JUnit.TriangleTest.triangleExceptionTest" />
-        <item itemvalue="JUnit.TriangleTest.triangleTest" />
+        <item itemvalue="JUnit.CircleTest.circleTest" />
+        <item itemvalue="JUnit.RectangleTest" />
+        <item itemvalue="JUnit.CircleTest.circleExceptionTest" />
+        <item itemvalue="JUnit.CircleTest" />
+        <item itemvalue="JUnit.SquareTest" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648127041097</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="OOP-work (Commit №2)">
+      <created>1649315488593</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1649315488593</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -214,7 +226,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Test commit" />
     <MESSAGE value="OOP-work" />
-    <option name="LAST_COMMIT_MESSAGE" value="OOP-work" />
+    <MESSAGE value="OOP-work (Commit №2)" />
+    <option name="LAST_COMMIT_MESSAGE" value="OOP-work (Commit №2)" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/java_learn$Task1Test__1_.ic" NAME="Task1Test (1) Coverage Results" MODIFIED="1644592938271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

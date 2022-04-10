@@ -19,7 +19,7 @@ public class Task2Test{
         String data = "ЭвО кАк";
         String str = task2.capit(data);
         String actual_str = "ЭОА";
-        assertEquals(str, actual_str);
+        assertEquals(actual_str, str);
     }
 
     @Test
@@ -27,7 +27,7 @@ public class Task2Test{
         String data = "ВоТ тАК";
         String str= task2.capit(data);
         String actual_str = "ВТАК";
-        assertEquals(str, actual_str);
+        assertEquals(actual_str, str);
     }
 
 }
