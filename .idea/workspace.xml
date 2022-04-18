@@ -4,37 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3841956d-0dd3-45a8-9326-5bf13476cbb0" name="Changes" comment="Fix work 6 and Test-work1">
+    <list default="true" id="3841956d-0dd3-45a8-9326-5bf13476cbb0" name="Changes" comment="Delete src">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_module/target/test-classes/ru/nshi/learn/work6/CircleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/main_module/target/test-classes/ru/nshi/learn/work6/CircleTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nshi/learn/work0/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nshi/learn/work0/Task1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nshi/learn/work0/Task2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nshi/learn/work1/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nshi/learn/work1/Task1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nshi/learn/work1/Task2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nshi/learn/work1/Task3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nshi/learn/work1/Task4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nshi/learn/work2/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nshi/learn/work2/Task1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nshi/learn/work2/Task2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nshi/learn/work2/Task3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nshi/learn/work2/Task4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nshi/learn/work2/Task5.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nshi/learn/work3/Task1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nshi/learn/work3/Task2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nshi/learn/work3/Task3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nshi/learn/work3/Task4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nshi/learn/work4/Task1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nshi/learn/work4/Task2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nshi/learn/work4/Task3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nshi/learn/work4/Task4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nshi/learn/work4/Task5.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nshi/learn/work4/Task6.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nshi/learn/work4/Task7.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nshi/learn/work_lecture4/Task5.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nshi/learn/work_lecture4/Task6.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nshi/learn/work_lecture4/Task7.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_module/src/main/java/ru/nshi/learn/work6/Figure.java" beforeDir="false" afterPath="$PROJECT_DIR$/main_module/src/main/java/ru/nshi/learn/work6/Figure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_module/src/test/java/ru/nshi/learn/work6/CircleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/main_module/src/test/java/ru/nshi/learn/work6/CircleTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +67,7 @@
       <recent name="learn" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RectangleTest">
+  <component name="RunManager" selected="JUnit.CircleTest">
     <configuration name="CircleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="main_module" />
       <extension name="coverage">
@@ -174,10 +147,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CircleTest" />
         <item itemvalue="JUnit.RectangleTest" />
         <item itemvalue="JUnit.CircleTest.circleTest" />
         <item itemvalue="JUnit.CircleTest.circleExceptionTest" />
-        <item itemvalue="JUnit.CircleTest" />
         <item itemvalue="JUnit.SquareTest" />
       </list>
     </recent_temporary>
@@ -219,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649599170386</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Delete src">
+      <created>1649600654000</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1649600654000</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -250,7 +230,8 @@
     <MESSAGE value="OOP-work" />
     <MESSAGE value="OOP-work (Commit №2)" />
     <MESSAGE value="Fix work 6 and Test-work1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix work 6 and Test-work1" />
+    <MESSAGE value="Delete src" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete src" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/java_learn$Task1Test__1_.ic" NAME="Task1Test (1) Coverage Results" MODIFIED="1644592938271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
