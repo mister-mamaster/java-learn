@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3841956d-0dd3-45a8-9326-5bf13476cbb0" name="Changes" comment="Delete src">
+    <list default="true" id="3841956d-0dd3-45a8-9326-5bf13476cbb0" name="Changes" comment="OOP-colors">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_module/src/main/java/ru/nshi/learn/work6/Figure.java" beforeDir="false" afterPath="$PROJECT_DIR$/main_module/src/main/java/ru/nshi/learn/work6/Figure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_module/src/test/java/ru/nshi/learn/work6/CircleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/main_module/src/test/java/ru/nshi/learn/work6/CircleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_module/src/main/java/ru/nshi/learn/work6/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/main_module/src/main/java/ru/nshi/learn/work6/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_module/src/main/java/ru/nshi/learn/work6/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/main_module/src/main/java/ru/nshi/learn/work6/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_module/src/test/java/ru/nshi/learn/work6/RectangleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/main_module/src/test/java/ru/nshi/learn/work6/RectangleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_module/target/classes/ru/nshi/learn/work6/Figure.class" beforeDir="false" afterPath="$PROJECT_DIR$/main_module/target/classes/ru/nshi/learn/work6/Figure.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_module/target/test-classes/ru/nshi/learn/work6/CircleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/main_module/target/test-classes/ru/nshi/learn/work6/CircleTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +71,7 @@
       <recent name="learn" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CircleTest">
+  <component name="RunManager" selected="JUnit.RectangleTest">
     <configuration name="CircleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="main_module" />
       <extension name="coverage">
@@ -147,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CircleTest" />
         <item itemvalue="JUnit.RectangleTest" />
+        <item itemvalue="JUnit.SquareTest" />
+        <item itemvalue="JUnit.CircleTest" />
         <item itemvalue="JUnit.CircleTest.circleTest" />
         <item itemvalue="JUnit.CircleTest.circleExceptionTest" />
-        <item itemvalue="JUnit.SquareTest" />
       </list>
     </recent_temporary>
   </component>
@@ -199,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649600654000</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="OOP-colors">
+      <created>1650278439276</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1650278439276</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -231,7 +242,8 @@
     <MESSAGE value="OOP-work (Commit №2)" />
     <MESSAGE value="Fix work 6 and Test-work1" />
     <MESSAGE value="Delete src" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete src" />
+    <MESSAGE value="OOP-colors" />
+    <option name="LAST_COMMIT_MESSAGE" value="OOP-colors" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/java_learn$Task1Test__1_.ic" NAME="Task1Test (1) Coverage Results" MODIFIED="1644592938271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

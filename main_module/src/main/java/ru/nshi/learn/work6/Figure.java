@@ -1,6 +1,6 @@
 package ru.nshi.learn.work6;
 
-public class Figure {
+public abstract class Figure {
     protected Colour colour = new Colour();
     protected double area;
 

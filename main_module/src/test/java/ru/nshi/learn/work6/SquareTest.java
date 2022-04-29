@@ -10,7 +10,7 @@ public class SquareTest {
     @Test
     void squareTest(){
         double[] sides = {3, 3, 3, 3};
-        Square square = new Square(sides);
+        Square square = new Square(3,3);
         assertEquals(9, square.getArea());
         System.out.print(square.info());
     }
@@ -19,11 +19,11 @@ public class SquareTest {
     void squareExceptionTest(){
         double[] sides1 = {0, 0, 0, 0};
         assertThrows(IllegalArgumentException.class, () -> {
-            Square square = new Square(sides1);
+            Square square = new Square(0,0);
         });
         double[] sides2 = {2, 3, 2, 3};
         assertThrows(IllegalArgumentException.class, () -> {
-            Square square = new Square(sides2);
+            Square square = new Square(2,3);
         });
     }
     
