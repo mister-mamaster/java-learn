@@ -15,6 +15,14 @@ public class Rectangle extends Figure {
         }
     }
 
+    public double getLenght() {
+        return lenght;
+    }
+
+    public double getWidth() {
+        return width;
+    }
+
     @Override
     public String info(){
         String str = super.info();
