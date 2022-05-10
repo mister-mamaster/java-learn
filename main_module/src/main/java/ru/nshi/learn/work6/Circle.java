@@ -3,7 +3,8 @@ package ru.nshi.learn.work6;
 public class Circle extends Figure {
     private final double radius;
 
-    public Circle(double radius){
+    public Circle(double radius, Colour colour){
+        super(colour);
         if(radius > 0) {
             this.radius = radius;
             this.area = 3.14 * Math.pow(radius, 2);

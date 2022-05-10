@@ -4,7 +4,8 @@ public class Rectangle extends Figure {
     protected final double lenght;
     protected final double width;
 
-    public Rectangle(double lenght, double width){
+    public Rectangle(double lenght, double width, Colour colour){
+        super(colour);
         if(lenght > 0 && width > 0) {
             this.lenght = lenght;
             this.width = width;

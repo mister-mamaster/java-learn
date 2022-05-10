@@ -3,7 +3,8 @@ package ru.nshi.learn.work6;
 public class Triangle extends Figure {
     private final double[] sides = new double[3];
 
-    public Triangle(double[] sides){
+    public Triangle(double[] sides, Colour colour){
+        super(colour);
         if((sides[0] > 0 && sides[1] > 0 && sides[2] > 0) &&
                 (((sides[0]+sides[1])>sides[2]) && ((sides[0] + sides[2])>sides[1]) && ((sides[1] + sides[2])>sides[0]))) {
             this.sides[0] = sides[0];

@@ -9,9 +9,9 @@ public class CircleTest {
 
     @Test
     void circleTest(){
-        Circle circle = new Circle(4);
+        Colour rgb = new RGB(1, 2, 3);
+        Circle circle = new Circle(4, rgb);
         double area = circle.getArea();
-        circle.colour.setColourHSB(1,2,3);
         System.out.print(circle.info());
         assertEquals(50.24, area);
     }
@@ -19,23 +19,24 @@ public class CircleTest {
     @Test
     void circleExceptionTest(){
         assertThrows(IllegalArgumentException.class, () -> {
-            Circle circle = new Circle(4);
-            circle.colour.setColourRGB(100, -2, 200);
+            Colour rgb = new RGB(100, -2, 100);
+            Circle circle = new Circle(4, rgb);
         });
         assertThrows(IllegalArgumentException.class, () -> {
-            Circle circle = new Circle(4);
-            circle.colour.setColourRGB(300, 100, 100);
+            Colour rgb = new RGB(300, 100, 100);
+            Circle circle = new Circle(4, rgb);
         });
         assertThrows(IllegalArgumentException.class, () -> {
-            Circle circle = new Circle(-500);
+            Colour rgb = new RGB(300, 100, 100);
+            Circle circle = new Circle(-4, rgb);
         });
         assertThrows(IllegalArgumentException.class, () -> {
-            Circle circle = new Circle(1);
-            circle.colour.setColourHSB(-1, 10, 10);
+            Colour hsb = new HSB(-1, 100, 100);
+            Circle circle = new Circle(4, hsb);
         });
         assertThrows(IllegalArgumentException.class, () -> {
-            Circle circle = new Circle(1);
-            circle.colour.setColourHSB(1, 101, 101);
+            Colour hsb = new HSB(1, 101, 101);
+            Circle circle = new Circle(4, hsb);
         });
     }
 }
