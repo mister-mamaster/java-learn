@@ -1,0 +1,24 @@
+<changelist name="Uncommitted_changes_before_Checkout_at_10_05_2022_12_04_[Changes]1" date="1652169907518" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_05_2022_12_04_[Changes]1/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 10.05.2022 12:04 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="main_module/target/test-classes/ru/nshi/learn/work6/RectangleTest.class" />
+    <option name="AFTER_PATH" value="main_module/target/test-classes/ru/nshi/learn/work6/RectangleTest.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_05_2022_12_04_[Changes]1/RectangleTest.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="main_module/target/test-classes/ru/nshi/learn/work6/SquareTest.class" />
+    <option name="AFTER_PATH" value="main_module/target/test-classes/ru/nshi/learn/work6/SquareTest.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_05_2022_12_04_[Changes]1/SquareTest.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="main_module/target/classes/ru/nshi/learn/work6/Square.class" />
+    <option name="AFTER_PATH" value="main_module/target/classes/ru/nshi/learn/work6/Square.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_05_2022_12_04_[Changes]1/Square.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="main_module/target/classes/ru/nshi/learn/work6/Rectangle.class" />
+    <option name="AFTER_PATH" value="main_module/target/classes/ru/nshi/learn/work6/Rectangle.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_05_2022_12_04_[Changes]1/Rectangle.class" />
+  </binary>
+</changelist>

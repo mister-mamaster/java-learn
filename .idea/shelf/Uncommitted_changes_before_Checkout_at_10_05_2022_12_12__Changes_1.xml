@@ -1,0 +1,54 @@
+<changelist name="Uncommitted_changes_before_Checkout_at_10_05_2022_12_12_[Changes]1" date="1652170370256" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_05_2022_12_12_[Changes]1/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 10.05.2022 12:12 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="main_module/target/test-classes/ru/nshi/learn/work6/RectangleTest.class" />
+    <option name="AFTER_PATH" value="main_module/target/test-classes/ru/nshi/learn/work6/RectangleTest.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_05_2022_12_12_[Changes]1/RectangleTest.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="main_module/target/classes/ru/nshi/learn/work6/Figure.class" />
+    <option name="AFTER_PATH" value="main_module/target/classes/ru/nshi/learn/work6/Figure.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_05_2022_12_12_[Changes]1/Figure.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="main_module/target/classes/ru/nshi/learn/work6/Square.class" />
+    <option name="AFTER_PATH" value="main_module/target/classes/ru/nshi/learn/work6/Square.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_05_2022_12_12_[Changes]1/Square.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="main_module/target/classes/ru/nshi/learn/work6/Triangle.class" />
+    <option name="AFTER_PATH" value="main_module/target/classes/ru/nshi/learn/work6/Triangle.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_05_2022_12_12_[Changes]1/Triangle.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="main_module/target/test-classes/ru/nshi/learn/work6/CircleTest.class" />
+    <option name="AFTER_PATH" value="main_module/target/test-classes/ru/nshi/learn/work6/CircleTest.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_05_2022_12_12_[Changes]1/CircleTest.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="main_module/target/test-classes/ru/nshi/learn/work6/TriangleTest.class" />
+    <option name="AFTER_PATH" value="main_module/target/test-classes/ru/nshi/learn/work6/TriangleTest.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_05_2022_12_12_[Changes]1/TriangleTest.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="main_module/target/test-classes/ru/nshi/learn/work6/SquareTest.class" />
+    <option name="AFTER_PATH" value="main_module/target/test-classes/ru/nshi/learn/work6/SquareTest.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_05_2022_12_12_[Changes]1/SquareTest.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="main_module/target/classes/ru/nshi/learn/work6/Colour.class" />
+    <option name="AFTER_PATH" value="main_module/target/classes/ru/nshi/learn/work6/Colour.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_05_2022_12_12_[Changes]1/Colour.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="main_module/target/classes/ru/nshi/learn/work6/Rectangle.class" />
+    <option name="AFTER_PATH" value="main_module/target/classes/ru/nshi/learn/work6/Rectangle.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_05_2022_12_12_[Changes]1/Rectangle.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="main_module/target/classes/ru/nshi/learn/work6/Circle.class" />
+    <option name="AFTER_PATH" value="main_module/target/classes/ru/nshi/learn/work6/Circle.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_05_2022_12_12_[Changes]1/Circle.class" />
+  </binary>
+</changelist>
