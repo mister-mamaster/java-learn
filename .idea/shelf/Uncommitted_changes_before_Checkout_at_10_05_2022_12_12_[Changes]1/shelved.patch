@@ -1,0 +1,334 @@
+Index: main_module/src/test/java/ru/nshi/learn/work6/CircleTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package ru.nshi.learn.work6;\r\n\r\nimport org.junit.jupiter.api.Test;\r\n\r\nimport static org.junit.jupiter.api.Assertions.*;\r\nimport static org.junit.jupiter.api.Assertions.assertEquals;\r\n\r\npublic class CircleTest {\r\n\r\n    @Test\r\n    void circleTest(){\r\n        Circle circle = new Circle(4);\r\n        double area = circle.getArea();\r\n        circle.colour.setColourHSB(1,2,3);\r\n        System.out.print(circle.info());\r\n        assertEquals(50.24, area);\r\n    }\r\n\r\n    @Test\r\n    void circleExceptionTest(){\r\n        assertThrows(IllegalArgumentException.class, () -> {\r\n            Circle circle = new Circle(4);\r\n            circle.colour.setColourRGB(100, -2, 200);\r\n        });\r\n        assertThrows(IllegalArgumentException.class, () -> {\r\n            Circle circle = new Circle(4);\r\n            circle.colour.setColourRGB(300, 100, 100);\r\n        });\r\n        assertThrows(IllegalArgumentException.class, () -> {\r\n            Circle circle = new Circle(-500);\r\n        });\r\n        assertThrows(IllegalArgumentException.class, () -> {\r\n            Circle circle = new Circle(1);\r\n            circle.colour.setColourHSB(-1, 10, 10);\r\n        });\r\n        assertThrows(IllegalArgumentException.class, () -> {\r\n            Circle circle = new Circle(1);\r\n            circle.colour.setColourHSB(1, 101, 101);\r\n        });\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/main_module/src/test/java/ru/nshi/learn/work6/CircleTest.java b/main_module/src/test/java/ru/nshi/learn/work6/CircleTest.java
+--- a/main_module/src/test/java/ru/nshi/learn/work6/CircleTest.java	
++++ b/main_module/src/test/java/ru/nshi/learn/work6/CircleTest.java	
+@@ -9,9 +9,9 @@
+ 
+     @Test
+     void circleTest(){
+-        Circle circle = new Circle(4);
++        Colour rgb = new RGB(1, 2, 3);
++        Circle circle = new Circle(4, rgb);
+         double area = circle.getArea();
+-        circle.colour.setColourHSB(1,2,3);
+         System.out.print(circle.info());
+         assertEquals(50.24, area);
+     }
+@@ -19,23 +19,24 @@
+     @Test
+     void circleExceptionTest(){
+         assertThrows(IllegalArgumentException.class, () -> {
+-            Circle circle = new Circle(4);
+-            circle.colour.setColourRGB(100, -2, 200);
++            Colour rgb = new RGB(100, -2, 100);
++            Circle circle = new Circle(4, rgb);
+         });
+         assertThrows(IllegalArgumentException.class, () -> {
+-            Circle circle = new Circle(4);
+-            circle.colour.setColourRGB(300, 100, 100);
++            Colour rgb = new RGB(300, 100, 100);
++            Circle circle = new Circle(4, rgb);
+         });
+         assertThrows(IllegalArgumentException.class, () -> {
+-            Circle circle = new Circle(-500);
++            Colour rgb = new RGB(300, 100, 100);
++            Circle circle = new Circle(-4, rgb);
+         });
+         assertThrows(IllegalArgumentException.class, () -> {
+-            Circle circle = new Circle(1);
+-            circle.colour.setColourHSB(-1, 10, 10);
++            Colour hsb = new HSB(-1, 100, 100);
++            Circle circle = new Circle(4, hsb);
+         });
+         assertThrows(IllegalArgumentException.class, () -> {
+-            Circle circle = new Circle(1);
+-            circle.colour.setColourHSB(1, 101, 101);
++            Colour hsb = new HSB(1, 101, 101);
++            Circle circle = new Circle(4, hsb);
+         });
+     }
+ }
+Index: main_module/src/main/java/ru/nshi/learn/work6/Circle.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package ru.nshi.learn.work6;\r\n\r\npublic class Circle extends Figure {\r\n    private final double radius;\r\n\r\n    public Circle(double radius){\r\n        if(radius > 0) {\r\n            this.radius = radius;\r\n            this.area = 3.14 * Math.pow(radius, 2);\r\n        }\r\n        else{\r\n            this.radius = -1;\r\n            throw new IllegalArgumentException();\r\n        }\r\n        }\r\n\r\n    public double getRadius() {\r\n        return radius;\r\n    }\r\n\r\n    @Override\r\n    public String info(){\r\n        String str = super.info();\r\n        return str + \"Радиус - \" + this.radius + \"\\n\";\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/main_module/src/main/java/ru/nshi/learn/work6/Circle.java b/main_module/src/main/java/ru/nshi/learn/work6/Circle.java
+--- a/main_module/src/main/java/ru/nshi/learn/work6/Circle.java	
++++ b/main_module/src/main/java/ru/nshi/learn/work6/Circle.java	
+@@ -3,7 +3,8 @@
+ public class Circle extends Figure {
+     private final double radius;
+ 
+-    public Circle(double radius){
++    public Circle(double radius, Colour colour){
++        super(colour);
+         if(radius > 0) {
+             this.radius = radius;
+             this.area = 3.14 * Math.pow(radius, 2);
+Index: main_module/src/main/java/ru/nshi/learn/work6/Colour.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package ru.nshi.learn.work6;\r\n\r\npublic class Colour {\r\n    private int RH, GS, BB;\r\n\r\n    public void setColourRGB(int red, int green, int blue){\r\n        if((red >= 0 && red <= 255) & (green >= 0 && green <= 255) & (blue >= 0 && blue <= 255)) {\r\n            this.RH = red;\r\n            this.GS = green;\r\n            this.BB = blue;\r\n        }\r\n        else{\r\n            throw new IllegalArgumentException();\r\n        }\r\n    }\r\n\r\n    public void setColourHSB(int hue, int saturation, int brightness){\r\n        if((hue >= 0 && hue <= 360) & (saturation >= 0 && saturation <= 100) & (brightness >= 0 && brightness <= 100)) {\r\n            this.RH = hue;\r\n            this.GS = saturation;\r\n            this.BB = brightness;\r\n        }\r\n        else{\r\n            throw new IllegalArgumentException();\r\n        }\r\n    }\r\n\r\n    public int getRH() {\r\n        return this.RH;\r\n    }\r\n\r\n    public int getGS() {\r\n        return this.GS;\r\n    }\r\n\r\n    public int getBB() {\r\n        return this.BB;\r\n    }\r\n\r\n    public String getColors(){\r\n        return this.RH + \"/\" + this.GS + \"/\" + this.BB;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/main_module/src/main/java/ru/nshi/learn/work6/Colour.java b/main_module/src/main/java/ru/nshi/learn/work6/Colour.java
+--- a/main_module/src/main/java/ru/nshi/learn/work6/Colour.java	
++++ b/main_module/src/main/java/ru/nshi/learn/work6/Colour.java	
+@@ -1,43 +1,8 @@
+ package ru.nshi.learn.work6;
+ 
+-public class Colour {
+-    private int RH, GS, BB;
+-
+-    public void setColourRGB(int red, int green, int blue){
+-        if((red >= 0 && red <= 255) & (green >= 0 && green <= 255) & (blue >= 0 && blue <= 255)) {
+-            this.RH = red;
+-            this.GS = green;
+-            this.BB = blue;
+-        }
+-        else{
+-            throw new IllegalArgumentException();
+-        }
+-    }
++public abstract class Colour
++{
++    @Override
++    public abstract String toString();
+ 
+-    public void setColourHSB(int hue, int saturation, int brightness){
+-        if((hue >= 0 && hue <= 360) & (saturation >= 0 && saturation <= 100) & (brightness >= 0 && brightness <= 100)) {
+-            this.RH = hue;
+-            this.GS = saturation;
+-            this.BB = brightness;
+-        }
+-        else{
+-            throw new IllegalArgumentException();
+-        }
+-    }
+-
+-    public int getRH() {
+-        return this.RH;
+-    }
+-
+-    public int getGS() {
+-        return this.GS;
+-    }
+-
+-    public int getBB() {
+-        return this.BB;
+-    }
+-
+-    public String getColors(){
+-        return this.RH + "/" + this.GS + "/" + this.BB;
+-    }
+ }
+Index: main_module/src/main/java/ru/nshi/learn/work6/Square.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package ru.nshi.learn.work6;\r\n\r\npublic class Square extends Rectangle {\r\n\r\n    public Square(double lenght, double width){\r\n        super(lenght, width);\r\n        if(lenght!=width) {\r\n            throw new IllegalArgumentException();\r\n        }\r\n        this.area = Math.pow(lenght, 2);\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/main_module/src/main/java/ru/nshi/learn/work6/Square.java b/main_module/src/main/java/ru/nshi/learn/work6/Square.java
+--- a/main_module/src/main/java/ru/nshi/learn/work6/Square.java	
++++ b/main_module/src/main/java/ru/nshi/learn/work6/Square.java	
+@@ -2,8 +2,8 @@
+ 
+ public class Square extends Rectangle {
+ 
+-    public Square(double lenght, double width){
+-        super(lenght, width);
++    public Square(double lenght, double width, Colour colour){
++        super(lenght, width, colour);
+         if(lenght!=width) {
+             throw new IllegalArgumentException();
+         }
+Index: main_module/src/main/java/ru/nshi/learn/work6/Triangle.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package ru.nshi.learn.work6;\r\n\r\npublic class Triangle extends Figure {\r\n    private final double[] sides = new double[3];\r\n\r\n    public Triangle(double[] sides){\r\n        if((sides[0] > 0 && sides[1] > 0 && sides[2] > 0) &&\r\n                (((sides[0]+sides[1])>sides[2]) && ((sides[0] + sides[2])>sides[1]) && ((sides[1] + sides[2])>sides[0]))) {\r\n            this.sides[0] = sides[0];\r\n            this.sides[1] = sides[1];\r\n            this.sides[2] = sides[2];\r\n            double P = (this.sides[0] + this.sides[1] + this.sides[2])/2;\r\n            this.area = Math.pow(P * (P - this.sides[0]) * (P - this.sides[1]) * (P - this.sides[2]), 0.5);\r\n        }\r\n        else{\r\n            throw new IllegalArgumentException();\r\n        }\r\n    }\r\n\r\n    public double[] getSides(){\r\n        return sides;\r\n    }\r\n\r\n    @Override\r\n    public String info(){\r\n        String str = super.info();\r\n        return str + \"Длины сторон \" + this.sides[0] + \", \" + this.sides[1] + \", \" + this.sides[2] + \"\\n\";\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/main_module/src/main/java/ru/nshi/learn/work6/Triangle.java b/main_module/src/main/java/ru/nshi/learn/work6/Triangle.java
+--- a/main_module/src/main/java/ru/nshi/learn/work6/Triangle.java	
++++ b/main_module/src/main/java/ru/nshi/learn/work6/Triangle.java	
+@@ -3,7 +3,8 @@
+ public class Triangle extends Figure {
+     private final double[] sides = new double[3];
+ 
+-    public Triangle(double[] sides){
++    public Triangle(double[] sides, Colour colour){
++        super(colour);
+         if((sides[0] > 0 && sides[1] > 0 && sides[2] > 0) &&
+                 (((sides[0]+sides[1])>sides[2]) && ((sides[0] + sides[2])>sides[1]) && ((sides[1] + sides[2])>sides[0]))) {
+             this.sides[0] = sides[0];
+Index: main_module/src/test/java/ru/nshi/learn/work6/RectangleTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package ru.nshi.learn.work6;\r\n\r\nimport org.junit.jupiter.api.Test;\r\n\r\nimport static org.junit.jupiter.api.Assertions.*;\r\nimport static org.junit.jupiter.api.Assertions.assertEquals;\r\n\r\npublic class RectangleTest {\r\n\r\n    @Test\r\n    void rectangleTest(){\r\n        Rectangle rectangle1 = new Rectangle(2, 3);\r\n        assertEquals(6, rectangle1.getArea());\r\n        System.out.print(rectangle1.info());\r\n\r\n        double[] sides2 = {2, 2, 2, 2};\r\n        Rectangle rectangle2 = new Rectangle(2,2);\r\n        assertEquals(4, rectangle2.getArea());\r\n        System.out.print(rectangle2.info());\r\n    }\r\n\r\n    @Test\r\n    void rectangleExceptionTest(){\r\n        assertThrows(IllegalArgumentException.class, () -> {\r\n            Rectangle rectangle = new Rectangle(0,2);\r\n        });\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/main_module/src/test/java/ru/nshi/learn/work6/RectangleTest.java b/main_module/src/test/java/ru/nshi/learn/work6/RectangleTest.java
+--- a/main_module/src/test/java/ru/nshi/learn/work6/RectangleTest.java	
++++ b/main_module/src/test/java/ru/nshi/learn/work6/RectangleTest.java	
+@@ -9,12 +9,12 @@
+ 
+     @Test
+     void rectangleTest(){
+-        Rectangle rectangle1 = new Rectangle(2, 3);
++        Rectangle rectangle1 = new Rectangle(2, 3, new RGB(1,2,3));
+         assertEquals(6, rectangle1.getArea());
+         System.out.print(rectangle1.info());
+ 
+         double[] sides2 = {2, 2, 2, 2};
+-        Rectangle rectangle2 = new Rectangle(2,2);
++        Rectangle rectangle2 = new Rectangle(2,2, new RGB(1,2,3));
+         assertEquals(4, rectangle2.getArea());
+         System.out.print(rectangle2.info());
+     }
+@@ -22,7 +22,7 @@
+     @Test
+     void rectangleExceptionTest(){
+         assertThrows(IllegalArgumentException.class, () -> {
+-            Rectangle rectangle = new Rectangle(0,2);
++            Rectangle rectangle = new Rectangle(0,2, new RGB(1,2,3));
+         });
+     }
+ }
+Index: main_module/src/main/java/ru/nshi/learn/work6/Figure.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package ru.nshi.learn.work6;\r\n\r\npublic abstract class Figure {\r\n    protected Colour colour = new Colour();\r\n    protected double area;\r\n\r\n    public Figure(){\r\n            this.area = -1;\r\n    }\r\n\r\n    public double getArea(){\r\n        return this.area;\r\n    }\r\n\r\n    public Colour getcolour() {\r\n        return colour;\r\n    }\r\n\r\n    public String info(){\r\n        return \"Объект типа \" + this.getClass().getSimpleName() + \"\\nЦвет - \" + this.colour.getColors() + \"\\nПлощадь фигуры - \" + this.area + \"\\n\";\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/main_module/src/main/java/ru/nshi/learn/work6/Figure.java b/main_module/src/main/java/ru/nshi/learn/work6/Figure.java
+--- a/main_module/src/main/java/ru/nshi/learn/work6/Figure.java	
++++ b/main_module/src/main/java/ru/nshi/learn/work6/Figure.java	
+@@ -1,22 +1,23 @@
+ package ru.nshi.learn.work6;
+ 
+ public abstract class Figure {
+-    protected Colour colour = new Colour();
++    protected Colour colour;
+     protected double area;
+ 
+-    public Figure(){
+-            this.area = -1;
++    public Figure(Colour colour){
++        this.colour = colour;
++        this.area = -1;
+     }
+ 
+     public double getArea(){
+         return this.area;
+     }
+ 
+-    public Colour getcolour() {
++    public Colour getColour() {
+         return colour;
+     }
+ 
+     public String info(){
+-        return "Объект типа " + this.getClass().getSimpleName() + "\nЦвет - " + this.colour.getColors() + "\nПлощадь фигуры - " + this.area + "\n";
++        return "Объект типа " + this.getClass().getSimpleName() + "\nЦвет - " + this.colour.toString() + "\nПлощадь фигуры - " + this.area + "\n";
+     }
+ }
+Index: main_module/src/main/java/ru/nshi/learn/work6/Rectangle.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package ru.nshi.learn.work6;\r\n\r\npublic class Rectangle extends Figure {\r\n    protected final double lenght;\r\n    protected final double width;\r\n\r\n    public Rectangle(double lenght, double width){\r\n        if(lenght > 0 && width > 0) {\r\n            this.lenght = lenght;\r\n            this.width = width;\r\n            this.area = this.lenght * this.width;\r\n            }\r\n        else{\r\n            throw new IllegalArgumentException();\r\n        }\r\n    }\r\n\r\n    public double getLenght() {\r\n        return lenght;\r\n    }\r\n\r\n    public double getWidth() {\r\n        return width;\r\n    }\r\n\r\n    @Override\r\n    public String info(){\r\n        String str = super.info();\r\n        return str + \"Длины сторон \" + this.lenght + \", \" + this.width + \"\\n\";\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/main_module/src/main/java/ru/nshi/learn/work6/Rectangle.java b/main_module/src/main/java/ru/nshi/learn/work6/Rectangle.java
+--- a/main_module/src/main/java/ru/nshi/learn/work6/Rectangle.java	
++++ b/main_module/src/main/java/ru/nshi/learn/work6/Rectangle.java	
+@@ -4,7 +4,8 @@
+     protected final double lenght;
+     protected final double width;
+ 
+-    public Rectangle(double lenght, double width){
++    public Rectangle(double lenght, double width, Colour colour){
++        super(colour);
+         if(lenght > 0 && width > 0) {
+             this.lenght = lenght;
+             this.width = width;
+Index: main_module/src/test/java/ru/nshi/learn/work6/TriangleTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package ru.nshi.learn.work6;\r\n\r\nimport org.junit.jupiter.api.Test;\r\n\r\nimport static org.junit.jupiter.api.Assertions.*;\r\nimport static org.junit.jupiter.api.Assertions.assertEquals;\r\n\r\npublic class TriangleTest {\r\n\r\n    @Test\r\n    void triangleTest(){\r\n        double[] sides = {7,7,8};\r\n        Triangle triangle = new Triangle(sides);\r\n        assertEquals(22.978250586152114, triangle.getArea());\r\n        System.out.print(triangle.info());\r\n    }\r\n\r\n    @Test\r\n    void triangleExceptionTest(){\r\n        double[] sides1 = {3, 3, 100};\r\n        assertThrows(IllegalArgumentException.class, () -> {\r\n            Triangle triangle = new Triangle(sides1);\r\n        });\r\n        double[] sides2 = {-7, -7, 8};\r\n        assertThrows(IllegalArgumentException.class, () -> {\r\n            Triangle triangle = new Triangle(sides2);\r\n        });\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/main_module/src/test/java/ru/nshi/learn/work6/TriangleTest.java b/main_module/src/test/java/ru/nshi/learn/work6/TriangleTest.java
+--- a/main_module/src/test/java/ru/nshi/learn/work6/TriangleTest.java	
++++ b/main_module/src/test/java/ru/nshi/learn/work6/TriangleTest.java	
+@@ -10,7 +10,7 @@
+     @Test
+     void triangleTest(){
+         double[] sides = {7,7,8};
+-        Triangle triangle = new Triangle(sides);
++        Triangle triangle = new Triangle(sides, new RGB(1,2,3));
+         assertEquals(22.978250586152114, triangle.getArea());
+         System.out.print(triangle.info());
+     }
+@@ -19,11 +19,11 @@
+     void triangleExceptionTest(){
+         double[] sides1 = {3, 3, 100};
+         assertThrows(IllegalArgumentException.class, () -> {
+-            Triangle triangle = new Triangle(sides1);
++            Triangle triangle = new Triangle(sides1, new RGB(1,2,3));
+         });
+         double[] sides2 = {-7, -7, 8};
+         assertThrows(IllegalArgumentException.class, () -> {
+-            Triangle triangle = new Triangle(sides2);
++            Triangle triangle = new Triangle(sides2, new RGB(1,2,3));
+         });
+     }
+ 
+Index: main_module/src/test/java/ru/nshi/learn/work6/SquareTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package ru.nshi.learn.work6;\r\n\r\nimport org.junit.jupiter.api.Test;\r\n\r\nimport static org.junit.jupiter.api.Assertions.assertEquals;\r\nimport static org.junit.jupiter.api.Assertions.assertThrows;\r\n\r\npublic class SquareTest {\r\n\r\n    @Test\r\n    void squareTest(){\r\n        double[] sides = {3, 3, 3, 3};\r\n        Square square = new Square(3,3);\r\n        assertEquals(9, square.getArea());\r\n        System.out.print(square.info());\r\n    }\r\n\r\n    @Test\r\n    void squareExceptionTest(){\r\n        double[] sides1 = {0, 0, 0, 0};\r\n        assertThrows(IllegalArgumentException.class, () -> {\r\n            Square square = new Square(0,0);\r\n        });\r\n        double[] sides2 = {2, 3, 2, 3};\r\n        assertThrows(IllegalArgumentException.class, () -> {\r\n            Square square = new Square(2,3);\r\n        });\r\n    }\r\n    \r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/main_module/src/test/java/ru/nshi/learn/work6/SquareTest.java b/main_module/src/test/java/ru/nshi/learn/work6/SquareTest.java
+--- a/main_module/src/test/java/ru/nshi/learn/work6/SquareTest.java	
++++ b/main_module/src/test/java/ru/nshi/learn/work6/SquareTest.java	
+@@ -10,7 +10,7 @@
+     @Test
+     void squareTest(){
+         double[] sides = {3, 3, 3, 3};
+-        Square square = new Square(3,3);
++        Square square = new Square(3,3, new RGB(1,2,3));
+         assertEquals(9, square.getArea());
+         System.out.print(square.info());
+     }
+@@ -19,11 +19,11 @@
+     void squareExceptionTest(){
+         double[] sides1 = {0, 0, 0, 0};
+         assertThrows(IllegalArgumentException.class, () -> {
+-            Square square = new Square(0,0);
++            Square square = new Square(0,0, new RGB(1,2,3));
+         });
+         double[] sides2 = {2, 3, 2, 3};
+         assertThrows(IllegalArgumentException.class, () -> {
+-            Square square = new Square(2,3);
++            Square square = new Square(2,3, new RGB(1,2,3));
+         });
+     }
+     
