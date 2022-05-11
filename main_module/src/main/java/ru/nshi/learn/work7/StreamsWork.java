@@ -16,23 +16,19 @@ public class StreamsWork {
         Stream<String> data = reader.lines();
         FileWriter fout = new FileWriter("C://Temp//Table.txt", false);
 
-        LinkedList<Car> cars = new LinkedList<>();
-        data
+        ArrayList<Car> cars = data
                 .skip(1)
                 .map(s -> {
                     String[] strings = s.split(",");
-                    Car car = new Car(strings[0], strings[1], strings[2], strings[3]);
-                    return car;
-                })
-                .forEach(s -> {
-                    cars.addLast(s);
+                    Car car = new Car(strings[0], strings[1], Integer.parseInt(strings[2]), strings[3]);
                     try {
-                        fout.append(s.toString());
-                        fout.append('\n');
+                        fout.append(car.toString() + '\n');
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
-                });
+                    return car;
+                })
+                .collect(Collectors.toCollection(ArrayList::new));
 
         Map<String, List<String>> carsColors = new HashMap<>();
         for (Car car1: cars){

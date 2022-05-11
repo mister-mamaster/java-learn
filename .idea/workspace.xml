@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3841956d-0dd3-45a8-9326-5bf13476cbb0" name="Changes" comment="Get for rectangle">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="3841956d-0dd3-45a8-9326-5bf13476cbb0" name="Changes" comment="StreamAPI 2">
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_05_2022_20_01_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_05_2022_20_01_[Changes]1/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_05_2022_20_01__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main_module/target/classes/ru/nshi/learn/work7/StreamsWork$CarMakerCompare.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_module/src/main/java/ru/nshi/learn/work7/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/main_module/src/main/java/ru/nshi/learn/work7/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_module/src/main/java/ru/nshi/learn/work7/StreamsWork.java" beforeDir="false" afterPath="$PROJECT_DIR$/main_module/src/main/java/ru/nshi/learn/work7/StreamsWork.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_module/target/classes/ru/nshi/learn/work6/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/main_module/target/classes/ru/nshi/learn/work6/Rectangle.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_module/target/classes/ru/nshi/learn/work6/Square.class" beforeDir="false" afterPath="$PROJECT_DIR$/main_module/target/classes/ru/nshi/learn/work6/Square.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_module/target/classes/ru/nshi/learn/work7/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/main_module/target/classes/ru/nshi/learn/work7/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_module/target/classes/ru/nshi/learn/work7/StreamsWork.class" beforeDir="false" afterPath="$PROJECT_DIR$/main_module/target/classes/ru/nshi/learn/work7/StreamsWork.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_module/target/test-classes/ru/nshi/learn/work6/RectangleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/main_module/target/test-classes/ru/nshi/learn/work6/RectangleTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_module/target/test-classes/ru/nshi/learn/work6/SquareTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/main_module/target/test-classes/ru/nshi/learn/work6/SquareTest.class" afterDir="false" />
     </list>
@@ -158,10 +165,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.StreamsWork" />
-        <item itemvalue="JUnit.RectangleTest" />
         <item itemvalue="JUnit.SquareTest" />
-        <item itemvalue="JUnit.CircleTest" />
+        <item itemvalue="JUnit.RectangleTest" />
         <item itemvalue="JUnit.CircleTest.circleTest" />
+        <item itemvalue="JUnit.CircleTest" />
       </list>
     </recent_temporary>
   </component>
@@ -265,7 +272,8 @@
     <MESSAGE value="OOP-colors" />
     <MESSAGE value="Lenght and width for rectangle and square" />
     <MESSAGE value="Get for rectangle" />
-    <option name="LAST_COMMIT_MESSAGE" value="Get for rectangle" />
+    <MESSAGE value="StreamAPI 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="StreamAPI 2" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/java_learn$Task1Test__1_.ic" NAME="Task1Test (1) Coverage Results" MODIFIED="1644592938271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
