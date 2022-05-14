@@ -1,0 +1,44 @@
+<changelist name="Uncommitted_changes_before_Checkout_at_11_05_2022_21_06_[Changes]" date="1652288789668" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_05_2022_21_06_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 11.05.2022 21:06 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="main_module/target/classes/ru/nshi/learn/work6/Colour.class" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="main_module/target/classes/ru/nshi/learn/work6/Triangle.class" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="main_module/target/classes/ru/nshi/learn/work6/Circle.class" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="main_module/target/classes/ru/nshi/learn/work6/Figure.class" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="main_module/target/classes/ru/nshi/learn/work6/RGB.class" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="main_module/target/classes/ru/nshi/learn/work6/HSB.class" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="main_module/target/classes/ru/nshi/learn/work6/Rectangle.class" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="main_module/target/classes/ru/nshi/learn/work6/Square.class" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+</changelist>
